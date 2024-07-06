@@ -1,4 +1,4 @@
-# cnpj
+# Consulte CNPJ info via terminal
 
 Consulte CNPJ pelo terminal
 
