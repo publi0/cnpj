@@ -21,7 +21,6 @@ archives:
       - "cnpj"
     format: tar.gz
     files:
-      - LICENSE
       - README.md
 
 release:
