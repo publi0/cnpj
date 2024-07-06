@@ -1,9 +1,10 @@
 package main
 
 import (
-	"cnpj/pkg"
 	"fmt"
 	"os"
+
+	"github.com/publi0/cnpj/pkg"
 )
 
 func main() {
