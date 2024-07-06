@@ -12,9 +12,7 @@ go build -o cnpj main.go
 
 ### From release
 
-```bash
-wget 
-```
+<https://github.com/publi0/cnpj/releases>
 
 ## Uso
 

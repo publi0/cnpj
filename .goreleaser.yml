@@ -1,0 +1,30 @@
+project_name: cnpj
+
+builds:
+  - id: "cnpj"
+    main: ./main.go
+    binary: cnpj
+    goos:
+      - windows
+      - darwin
+      - linux
+    goarch:
+      - amd64
+      - arm64
+    hooks:
+      pre: go mod tidy
+      post: go test ./...
+
+archives:
+  - id: "archive"
+    builds:
+      - "cnpj"
+    format: tar.gz
+    files:
+      - LICENSE
+      - README.md
+
+release:
+  github:
+    owner: publi0
+    name: cnpj
