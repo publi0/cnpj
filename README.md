@@ -6,9 +6,9 @@ Consulte CNPJ pelo terminal
 
 ### Go install
 
-    ```bash
-    go install github.com/publi0/cnpj@latest
-    ```
+```bash
+go install github.com/publi0/cnpj@latest
+```
 
 ### From source
 
