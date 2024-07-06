@@ -1,6 +1,8 @@
 package pkg
 
 import (
+	"regexp"
+
 	"github.com/spf13/cobra"
 )
 
@@ -27,6 +29,15 @@ var RootCmd = &cobra.Command{
 func fetchCNPJ(cmd *cobra.Command, args []string) {
 	var data any
 	cnpj := args[0]
+
+	reg := regexp.MustCompile("[^0-9]+")
+	cnpj = reg.ReplaceAllString(cnpj, "")
+
+	if cnpj == "" {
+		cmd.Println("CNPJ não pode ser vazio.")
+		return
+	}
+
 	data, err := fetchCNPJData(cmd.Context(), cnpj)
 	if err != nil {
 		panic(err)
