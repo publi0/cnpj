@@ -1,4 +1,4 @@
-module cnpj
+module github.com/publi0/cnpj
 
 go 1.22.5
 
